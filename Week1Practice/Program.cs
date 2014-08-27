@@ -9,31 +9,118 @@ namespace Week1Practice
     class Program
     {
         static void Main(string[] args)
+
         {
             // DECLARING VARIABLES
             // 1. Declare a string variable called "myName" and set it equal to your name
+            String myName = "Brandy";
+
             // 2. Declare a number varible called "myAge" and set it equal to your age
+            int myAge = 37;
+
             // 3. Declare a boolean value called "myBool" and set it equal to true or false;
+            bool myBool = true;
             // 4. Declare a new list of strings called "productsList" and set it equal to "basketball", "baseball glove", "tennis shoes", "hockey puck"
+            string[] productsList = { "basketball", "baseball glove", "tennis shoes", "hockey puck" };
+
 
             // PRINTING VARIABLES TO THE CONSOLE USING CONSOLE.WRITELINE()
             // 1. Print your name to the console using the format: "My name is <myName> and I'm a beast of a programmer"
+            Console.WriteLine("My name is" + myName + "and I'm a beast of a programmer");
+
             // 2. Print out your age to the console using the format: "I am <myAge> years awesome."
+            Console.WriteLine("I am" + myAge + "years awesome");
+
             // 3. Print out your boolean value using the format: "I set my boolean value equal to <myBool>"
+
+            Console.WriteLine("I set my boolean value equal to" + myBool); 
+
             // 4. Using a For loop, print out each value in productsList.
 
             // FOR LOOP PRACTICE
             // 1. Create a for loop that prints out the numbers 1 to 10.
+            for (int i = 1; i <= 10;  i = i + 1)
+            {
+                Console.WriteLine(i);
+               
+            }
+
             // 2. Create a for loop that prints out the numbers 10 to 1.
+            for (int i = 10; i >= 1; i = i - 1)
+            {
+                Console.WriteLine(i);
+
+            }
             // 3. Create a for loop that prints out the numbers 10 to 30, only printing the even numbers
+            for (int i = 10; i <= 30; i = i + 1)
+            {
+                Console.WriteLine(i);
+            }
             // 4. Create a for loop that prints out the numbers 100 to 75, only printing every 5th number (100, 95, 90, 85, 80, 75)
+            for (int i = 100; i >= 75; i = i - 5)
+            {
+                Console.WriteLine(i);
+            }
+        
 
             // WHILE LOOP PRACTICE
             // 1. Create a while loop that prints out the numbers from 1 to 10.
+            int i = 1;
+            while (i <= 10)
+            {
+                Console.WriteLine(i);
+                i = i + 1;
+            }
+         
             // 2. Create a while loop that prints out the numbers from 10 to 1.
+            
+            int i = 10;
+            while (i >= 1)
+            {
+                Console.WriteLine(i);
+                i = i - 1;
+            }
             // 3. Create a while loop that prints out the numbers from 15 to 30, only printing the even numbers
+            int i = 15; 
+            while (i <= 30)
+            {  
+             if((i%2) != 0) 
+              continue; 
+             Console.WriteLine(i);
+                i++;
+
             // 4. Create a while loop that prints out the numbers from 100 to 75, only printing every 5th number (100, 95, 90, 85, 80, 75)
+            int i = 100;
+                while (i >= 75)
+                {
+                    Console.WriteLine(i);
+                    i = i - 5;
+                }
+
             // 5. Create a while loop that prints out the numbers from 1 to 10 until it reaches one that is divisible by 4.
+             int i = 1; 
+            while (i <= 10)
+            {  
+             if((i%4) != 0) 
+              continue; 
+             Console.WriteLine(i);
+                i++;
+            }
+            }
+        }
+           
+    
+        //Functions go below here
+        
+        static void Greet(string name)
+        {
+            Console.WriteLine("Hello, " + name);
+        }
+        
+
+        }
+
+
 
             // PUTTING IT TOGETHER
             // Use either FOR or WHILE loops to accomplish the following:
